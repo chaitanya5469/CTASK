@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">C TASK</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="my_tasks">My Tasks</string>
+    <string name="search_tasks">Search Tasks</string>
+    <string name="enter_task_title">Enter Task Title</string>
+    <string name="priority_prompt">Select Priority</string>
+    <string name="task_due_date">Task Due Date</string>
+    <string name="enter_task_description">Enter Task Description</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_splash">Splash</string>
+</resources>
