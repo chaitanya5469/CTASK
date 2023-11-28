@@ -80,7 +80,9 @@ public class ReminderWorker extends Worker {
         RemoteViews contentView = new RemoteViews(getApplicationContext().getPackageName(), R.layout.notification_layout);
         contentView.setImageViewResource(R.id.image, R.drawable.logo_no_background);
 
-        PendingIntent pendingSwitchIntent = PendingIntent.getBroadcast(getApplicationContext(), 0, intent, PendingIntent.FLAG_IMMUTABLE);
+         Intent intent1=new Intent(getApplicationContext(),NoteActivity.class);
+        intent1.putExtra("task",task);
+        PendingIntent pendingSwitchIntent = PendingIntent.getBroadcast(getApplicationContext(), 1, intent1, PendingIntent.FLAG_IMMUTABLE);
         contentView.setOnClickPendingIntent(R.id.flashButton, pendingSwitchIntent);
         contentView.setTextViewText(R.id.message, title);
         contentView.setTextViewText(R.id.date, date);
